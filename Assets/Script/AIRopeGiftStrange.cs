@@ -7,17 +7,17 @@ public class AIRopeGiftStrange : MonoSnowstorm<AIRopeGiftStrange>
 {
     //获取IOS函数声明
 #if UNITY_IOS
-    [DllImport("__Internal")]
-    internal extern static void onGameEvent(string eventToken);
+    //[DllImport("__Internal")]
+    //internal extern static void onGameEvent(string eventToken);
 
-    [DllImport("__Internal")]
-    internal extern static void onGameLevelChanged(int level);
+    //[DllImport("__Internal")]
+    //internal extern static void onGameLevelChanged(int level);
 #endif
 
     public void TangLatin(string eventToken)
     {
 #if UNITY_IOS 
-        onGameEvent(eventToken);
+    //    onGameEvent(eventToken);
         print("AIGamePlus 尝试调用原生方法打点 事件：" + eventToken);
 #endif
     }
@@ -25,7 +25,7 @@ public class AIRopeGiftStrange : MonoSnowstorm<AIRopeGiftStrange>
     public void TangMagmaAnother(int level)
     {
 #if UNITY_IOS
-        onGameLevelChanged(level);
+     //   onGameLevelChanged(level);
         print($"AIGamePlus 尝试调用原生方法：等级： {level}");
 #endif
     }
