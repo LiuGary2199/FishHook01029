@@ -59,6 +59,7 @@ public class GarlandStand : MonoBehaviour
                 if (HappenLack.HeDaunt())
                 {
                  LoadAGameScene();
+                    return;
                 }
 
                 UIStrange.LawLaurasia().BeatUIHouse(nameof(GarlandMask));
