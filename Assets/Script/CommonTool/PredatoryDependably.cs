@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
-using static UnityEditor.Progress;
 
 public class PredatoryDependably : MonoBehaviour
 {
