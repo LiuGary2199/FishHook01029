@@ -1,0 +1,107 @@
+{
+  "ConfigInfo": [
+    {
+      "Key": "本配置文件说明"
+    },
+    {
+      "Key": "TendStand",
+      "Value": "UIPanel\\TendStand"
+    },
+    {
+      "Key": "GamePanel",
+      "Value": "UIPanel\\GamePanel"
+    },
+    {
+      "Key": "PrinterStand",
+      "Value": "UIPanel\\PrinterStand"
+    },
+    {
+      "Key": "Japan",
+      "Value": "UIPanel\\Common\\Japan"
+    },
+    {
+      "Key": "CrustalAttain",
+      "Value": "UIPanel\\Common\\CrustalAttain"
+    },
+    {
+      "Key": "LevelCompletePanel",
+      "Value": "UIPanel\\LevelCompletePanel"
+    },
+    {
+      "Key": "DuneUsStand",
+      "Value": "UIPanel\\DuneUsStand"
+    },
+    {
+      "Key": "DailyGiftPanel",
+      "Value": "UIPanel\\DailyGift\\DailyGiftPanel"
+    },
+    {
+      "Key": "RemoveAdPanel",
+      "Value": "UIPanel\\RemoveAd\\RemoveAdPanel"
+    },
+    {
+      "Key": "EndlessTreasurePanel",
+      "Value": "UIPanel\\EndlessTreasure\\EndlessTreasurePanel"
+    },
+    {
+      "Key": "RankStarPanel",
+      "Value": "UIPanel\\RankStar\\RankStarPanel"
+    },
+    {
+      "Key": "BedSaveTightStand",
+      "Value": "UIPanel\\BedSaveTightStand"
+    },
+    {
+        "Key": "CashOutPanel",
+        "Value": "UIPanel\\CashOutPanel"
+    },
+    {
+      "Key": "EruptStand",
+      "Value": "UIPanel\\EruptStand"
+    },
+    {
+      "Key": "JT_CashOutPanel",
+      "Value": "UIPanel\\JT_CashOutPanel"
+    },
+    {
+      "Key": "UtahMagmaSoStand",
+      "Value": "UIPanel\\UtahMagmaSoStand"
+    },
+    {
+      "Key": "GarlandMask",
+      "Value": "UIPanel\\GarlandMask"
+    },
+    {
+      "Key": "HisRowStand",
+      "Value": "UIPanel\\HisRowStand"
+    },
+    {
+      "Key": "WaryStand",
+      "Value": "UIPanel\\WaryStand"
+    },
+    {
+      "Key": "TempleStand",
+      "Value": "UIPanel\\TempleStand"
+    },
+    {
+      "Key": "CouldZeroStand",
+      "Value": "UIPanel\\CouldZeroStand"
+    },
+    {
+      "Key": "PackAnStand",
+      "Value": "UIPanel\\PackAnStand"
+    },
+    {
+      "Key": "LateStand",
+      "Value": "UIPanel\\LateStand"
+    },
+    {
+      "Key": "OccupationalSoAlaStand",
+      "Value": "UIPanel\\OccupationalSoAlaStand"
+    },
+    {
+      "Key": "TightStand",
+      "Value": "UIPanel\\TightStand"
+    }
+  ]
+}
