@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -50,12 +50,12 @@ public class ZJT_Manager : MonoSnowstorm<ZJT_Manager>
 #if ZT
 
         CashOutManager.LawLaurasia().AddMoney(money);
-#if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS 
         if (PlayerPrefs.GetInt("2cgw82") == 0)
         {
             if (GetMoney() > 100)
             {
-                AIGamePlusManager.GetInstance().SendEvent("2cgw82");
+                AIRopeGiftStrange.LawLaurasia().TangLatin("2cgw82");
                 PlayerPrefs.SetInt("2cgw82", 1);
             }
         }

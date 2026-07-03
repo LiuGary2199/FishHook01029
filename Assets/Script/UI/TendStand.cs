@@ -1,4 +1,4 @@
-﻿using DG.Tweening;
+using DG.Tweening;
 using JetBrains.Annotations;
 using System;
 using System.Collections;
@@ -110,8 +110,8 @@ public class TendStand : SeedUIHouse
         
         }else
         {
-            #if UNITY_IOS && !UNITY_EDITOR
-            AIRopeGiftStrange.GetInstance().SendEvent("8emkyx");
+#if UNITY_IOS
+            AIRopeGiftStrange.LawLaurasia().TangLatin("8emkyx");
             #endif
         }
         m_PrinterTin.onClick.AddListener(() =>

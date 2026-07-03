@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -49,9 +49,9 @@ public class DuneUsStand : SeedUIHouse
             DuneMeStrange.instance.TermAPPinBestow();
             StartCoroutine(FrownStand());
         }
-#if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS
               PlayerPrefs.SetInt("da2prx", 1);
-        AIRopeGiftStrange.GetInstance().SendEvent("da2prx");
+        AIRopeGiftStrange.LawLaurasia().TangLatin("da2prx");
 #endif
 
 

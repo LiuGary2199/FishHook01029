@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,18 +27,18 @@ public class HangStrange : MonoBehaviour
 
         StainJar.LawLaurasia().FoodOn(StainToll.SceneMusic.Sound_BGM);
 
-#if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS 
   if (PlayerPrefs.GetInt("da2prx") > 0)
         {
-            AIRopeGiftStrange.GetInstance().SendEvent("da2prx");
+            AIRopeGiftStrange.LawLaurasia().TangLatin("da2prx");
         }
         if (PlayerPrefs.GetInt("2cgw82") > 0)
         {
-            AIRopeGiftStrange.GetInstance().SendEvent("2cgw82");
+            AIRopeGiftStrange.LawLaurasia().TangLatin("2cgw82");
         }
         if (PlayerPrefs.GetInt("7sfuth") > 0)
         {
-            AIRopeGiftStrange.GetInstance().SendEvent("7sfuth");
+            AIRopeGiftStrange.LawLaurasia().TangLatin("7sfuth");
         }
 #endif
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using LitJson;
@@ -346,12 +346,12 @@ public class RopeMintStrange : MonoSnowstorm<RopeMintStrange>
         {
             TendStand.Instance.FlipperSeatBode();
         }
-#if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS
   if (PlayerPrefs.GetInt("7sfuth") == 0)
         {
-            if (AiryMintStrange.GetDouble(CTedium.sv_CumulativeGoldCoin) > 10)
+            if (AiryMintStrange.GetDouble(CTedium.Dy_InnovativeSeatSate) > 10)
             {
-                AIRopeGiftStrange.GetInstance().SendEvent("7sfuth");
+                AIRopeGiftStrange.LawLaurasia().TangLatin("7sfuth");
                 PlayerPrefs.SetInt("7sfuth", 1);
             }
         }
