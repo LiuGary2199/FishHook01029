@@ -509,6 +509,57 @@ MonoBehaviour:
   MAX_REWARD_ID: 4e1669efa1f7b750
   MAX_INTER_ID: 1aa1182ca4b991a3
   BeFill: 0
+--- !u!1 &1154736757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154736759}
+  - component: {fileID: 1154736758}
+  m_Layer: 0
+  m_Name: Adjust
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1154736758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154736757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fafe5b9d0043f14c953942406134ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startManually: 1
+  eventBuffering: 0
+  sendInBackground: 0
+  launchDeferredDeeplink: 1
+  appToken: gdl8tch0y3gg
+  logLevel: 1
+  environment: 1
+--- !u!4 &1154736759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154736757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &1378907698
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -738,7 +789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _LoginPlatform: 1
   AppInfo: 178
-  BaseUrl: http://us.bouncebuddy.top
+  BaseUrl: http://us.baitswipe.top
   Account: 
   Data:
     UserID: 
@@ -763,11 +814,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32f98fa7ffa4c7428742e5c92ee25bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SeedMaw: http://bouncebuddy.top
-  SeedReuseMaw: http://bouncebuddy.top/api/client/user/getId?gameCode=
-  SeedTediumMaw: http://bouncebuddy.top/api/client/config?gameCode=
-  SeedLineMaw: http://bouncebuddy.top/api/client/common/current_timestamp?gameCode=
-  SeedSqueakMaw: http://bouncebuddy.top/api/client/user/setAdjustId?gameCode=
+  SeedMaw: http://baitswipe.top
+  SeedReuseMaw: http://baitswipe.top/api/client/user/getId?gameCode=
+  SeedTediumMaw: http://baitswipe.top/api/client/config?gameCode=
+  SeedLineMaw: http://baitswipe.top/api/client/common/current_timestamp?gameCode=
+  SeedSqueakMaw: http://baitswipe.top/api/client/user/setAdjustId?gameCode=
   RopeKnow: 21416
   Surpass: GooglePlay
   Referee: 
@@ -880,57 +931,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssignTwain: {fileID: 5066918861860088409}
   BirdlikeBode: {fileID: 5721704030887046729}
---- !u!1 &1581700599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1581700601}
-  - component: {fileID: 1581700600}
-  m_Layer: 0
-  m_Name: Adjust
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1581700600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581700599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fafe5b9d0043f14c953942406134ec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startManually: 1
-  eventBuffering: 0
-  sendInBackground: 0
-  launchDeferredDeeplink: 1
-  appToken: gdl8tch0y3gg
-  logLevel: 1
-  environment: 1
---- !u!4 &1581700601
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581700599}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1651805699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1712,4 +1712,4 @@ SceneRoots:
   - {fileID: 1727286490}
   - {fileID: 524436997}
   - {fileID: 1500108929}
-  - {fileID: 1581700601}
+  - {fileID: 1154736759}
