@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using LitJson;
@@ -1031,39 +1031,39 @@ public class CashOutManager : MonoSnowstorm<CashOutManager>
         }
         else if (Application.platform == RuntimePlatform.IPhonePlayer)
         {
-            #if UNITY_IOS  && !UNITY_EDITOR 
-            try
-            {
-                //是否安装Paypal
-                bool isHavePaypal = false;
-                if (Application.internetReachability != NetworkReachability.NotReachable)
-                    isHavePaypal = _IsHavePaypal(); // 调用iOS原生方法
-                ReportEvent(1018, null, null, isHavePaypal ? 1 : 0);
-                //安装来源
-                string installerPackageName = "unknown";
-                installerPackageName = _GetInstallerPackageName(); // 调用iOS原生方法
-                ReportEvent(1019, installerPackageName ?? "unknown");
-                //开机时间
-                long bootTime = _GetBootTime(); // 调用iOS原生方法
-                ReportEvent(1020, null, null, bootTime);
-                //硬件信息（CPU数、内存GB、存储GB）
-                int cpuNum = 0;
-                int ramGB = 0;
-                int romGB = 0;
-                _GetHardwareInfo(out cpuNum, out ramGB, out romGB);
-                ReportEvent(1021, null, null, cpuNum, ramGB, romGB);
-                //电池信息（电量、充电状态）
-                int battery = -1;
-                int isCharging = -1;
-                _GetBatteryInfo(out battery, out isCharging);
-                if (battery != -1 && isCharging != -1)
-                    ReportEvent(1022, null, null, battery, isCharging);
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError($"iOS设备信息上报异常：{e.Message}\n{e.StackTrace}");
-            }
-            #endif
+            //#if UNITY_IOS  && !UNITY_EDITOR 
+            //try
+            //{
+            //    //是否安装Paypal
+            //    bool isHavePaypal = false;
+            //    if (Application.internetReachability != NetworkReachability.NotReachable)
+            //        isHavePaypal = _IsHavePaypal(); // 调用iOS原生方法
+            //    ReportEvent(1018, null, null, isHavePaypal ? 1 : 0);
+            //    //安装来源
+            //    string installerPackageName = "unknown";
+            //    installerPackageName = _GetInstallerPackageName(); // 调用iOS原生方法
+            //    ReportEvent(1019, installerPackageName ?? "unknown");
+            //    //开机时间
+            //    long bootTime = _GetBootTime(); // 调用iOS原生方法
+            //    ReportEvent(1020, null, null, bootTime);
+            //    //硬件信息（CPU数、内存GB、存储GB）
+            //    int cpuNum = 0;
+            //    int ramGB = 0;
+            //    int romGB = 0;
+            //    _GetHardwareInfo(out cpuNum, out ramGB, out romGB);
+            //    ReportEvent(1021, null, null, cpuNum, ramGB, romGB);
+            //    //电池信息（电量、充电状态）
+            //    int battery = -1;
+            //    int isCharging = -1;
+            //    _GetBatteryInfo(out battery, out isCharging);
+            //    if (battery != -1 && isCharging != -1)
+            //        ReportEvent(1022, null, null, battery, isCharging);
+            //}
+            //catch (System.Exception e)
+            //{
+            //    Debug.LogError($"iOS设备信息上报异常：{e.Message}\n{e.StackTrace}");
+            //}
+            //#endif
         }
     }
     // 统一处理Android静态方法调用
@@ -1085,11 +1085,11 @@ public class CashOutManager : MonoSnowstorm<CashOutManager>
     }
     // iOS原生方法桥接
      #if UNITY_IOS && !UNITY_EDITOR 
-    [DllImport("__Internal")] private static extern bool _IsHavePaypal(); // 检查是否安装Paypal
-    [DllImport("__Internal")] private static extern string _GetInstallerPackageName(); // 获取安装来源
-    [DllImport("__Internal")] private static extern long _GetBootTime(); // 获取开机时间
-    [DllImport("__Internal")] private static extern void _GetHardwareInfo(out int cpuNum, out int ramGB, out int romGB); // 获取硬件信息
-    [DllImport("__Internal")] private static extern void _GetBatteryInfo(out int battery, out int isCharging); // 获取电池信息
+    //[DllImport("__Internal")] private static extern bool _IsHavePaypal(); // 检查是否安装Paypal
+    //[DllImport("__Internal")] private static extern string _GetInstallerPackageName(); // 获取安装来源
+    //[DllImport("__Internal")] private static extern long _GetBootTime(); // 获取开机时间
+    //[DllImport("__Internal")] private static extern void _GetHardwareInfo(out int cpuNum, out int ramGB, out int romGB); // 获取硬件信息
+    //[DllImport("__Internal")] private static extern void _GetBatteryInfo(out int battery, out int isCharging); // 获取电池信息
     #endif
     public void AddTaskValue(string Name, float Value) //增加任务值
     {
